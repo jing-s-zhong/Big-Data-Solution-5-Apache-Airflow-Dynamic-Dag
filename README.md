@@ -1,7 +1,29 @@
 # Big-Data-Solution-5-Apache-Airflow-Dynamic-Dag
 
-### Install Apache Airflow locally
+### Starting Airflow Docker Container
 
-https://airflow.apache.org/docs/apache-airflow/stable/start/local.html
+```
+docker-compose up -d
+```
 
-### Create DAG
+### Enter Airflow Web UI
+
+```
+https://localhost:8080
+
+username: airflow
+password: airflow
+```
+
+### Check Snowflake Package
+
+(1) Admin->Providers
+
+check following item in the list
+```
+apache-airflow-providers-snowflake
+```
+
+(2) Admin->Connections-><Add a new connection>
+
+check existing the "Snowflake" option in connection_type drop_down list 
