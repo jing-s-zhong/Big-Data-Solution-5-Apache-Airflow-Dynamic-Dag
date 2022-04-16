@@ -1,5 +1,7 @@
+# Project local storage of the volumes
 plugins/
 logs/
+pgadmin/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
